@@ -81,9 +81,7 @@ package ispring.as2player
 				m_connection = null;
 			}
 			
-			m_loader.unloadAndStop(true);
-            System.pauseForGCIfCollectionImminent(0.75);
-            System.pauseForGCIfCollectionImminent(0.25);
+			m_loader.unload();
 		}
 		
 		public function close():void
